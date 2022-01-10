@@ -83,3 +83,18 @@ function getRandomNumber (min, max) {
 function getRandomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
+
+function winTheGame() {
+  function killTheCircle() {
+    const round = document.querySelector('.circle')
+    
+    if (round) {
+     
+      round.click()
+   }
+  }
+  
+  setInterval(killTheCircle, 200)
+}
+
+winTheGame();
